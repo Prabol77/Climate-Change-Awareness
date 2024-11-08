@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Climate Change Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Join the Climate Change Community</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="carbon-footprint.html">Carbon Footprint</a></li>
+                <li><a href="sustainable-living.html">Sustainable Living</a></li>
+                <li><a href="global-initiatives.html">Global Initiatives</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Sign Up to Stay Informed and Take Action</h2>
+        <form id="signupForm" action="thank-you.html" method="post" class="form-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="location">Location (City, Country):</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="interest">How would you like to contribute?</label>
+            <select id="interest" name="interest" required>
+                <option value="">Select an option</option>
+                <option value="volunteer">Volunteering</option>
+                <option value="donation">Donation</option>
+                <option value="spreading-awareness">Spreading Awareness</option>
+                <option value="events">Attending Events</option>
+            </select>
+
+            <button type="submit" class="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Email: abc@gmail.com | Phone: +123 456 7890</p>
+    </footer>
+</body>
+</html>

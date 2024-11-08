@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Calculate Your Carbon Footprint</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="carbon-footprint.html">Carbon Footprint</a></li>
+                <li><a href="sustainable-living.html">Sustainable Living</a></li>
+                <li><a href="global-initiatives.html">Global Initiatives</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Carbon Footprint Calculator</h2>
+        <form id="carbonForm" class="form-container">
+            <label for="transport">Transportation (km/week):</label>
+            <input type="number" id="transport" name="transport" required>
+            
+            <label for="electricity">Electricity Usage (kWh/month):</label>
+            <input type="number" id="electricity" name="electricity" required>
+
+            <label for="food">Food Consumption (kg/month):</label>
+            <input type="number" id="food" name="food" required>
+
+            <button type="button" onclick="calculateFootprint()">Calculate</button>
+        </form>
+
+        <div id="result">
+            <h3>Your Estimated Carbon Footprint:</h3>
+            <p id="carbon-output">0.00 tonnes CO₂ per year</p>
+        </div>
+
+        <script src="footprint.js"></script>
+    </section>
+
+    <footer>
+        <p>Email: abc@gmail.com | Phone: +123 456 7890</p>
+    </footer>
+</body>
+</html>
